@@ -34,28 +34,47 @@ def is_mentioned(index, str):
 			return i
 	return 0
 
-def count_call(df):
-	index = df['C'].value_counts().index.to_numpy()
-	# i=int(np.where(index == 'Sephiroth')[0])
+def count_call(df, index):
 	call_adj = np.zeros((len(index), len(index)))
 	dial = df['D']
-	for i in dial:
-		mention = is_mentioned(index, i)
-		# if mention != 0:
-			# row = df[dial == i].index
-			# print(row)
-			# col = int(np.where(index == mention)[0])
-			# call_adj[row, col] += 1
-	print(call_adj)
+	d_i = dial.index.to_numpy()
+	for i in d_i:
+		mention = is_mentioned(index, dial[i])
+		if mention != 0:
+			row = int(np.where(index == df.loc[i, 'C'])[0]) # who
+			col = int(np.where(index == mention)[0]) # mentioned
+			call_adj[row, col] += 1
+	return call_adj
 
-# def count_context(df):
+def count_context(df, index):
+	context_adj = np.zeros((len(index), len(index)))
+	window = 5 # odd number
+	half = int(window / 2)
+	cha = df['C']
+	cha_i = cha.index.to_numpy()
+	for i in cha_i:
+		row = int(np.where(index == cha[i])[0])
+		ran = range(i - half, i + half + 1)
+		if i < half:
+			ran = range(0, i + half + 1)
+		elif i + half + 1 >= len(cha_i):
+			ran = range(i - half, len(cha_i))
+		for j in ran:
+			col = int(np.where(index == cha[j])[0])
+			context_adj[row, col] += 1
+		context_adj[row, row] -= 1
+	context_adj /= len(cha_i)
+	return context_adj
 
-# def make_graph(data):
-# 	window = 5
+def make_graph(df):
+	index = df['C'].value_counts().index.to_numpy()
+	call_adj = count_call(df, index)
+	context_adj = count_context(df, index)
+	# print(call_adj + context_adj)
 
 def main():
 	df = cleaning()
-	count_call(df)
+	make_graph(df)
 
 if __name__ == "__main__":
 	main()
