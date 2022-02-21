@@ -9,7 +9,7 @@ def get_data():
 	df = pd.read_csv(filename)
 
 	c = df.iloc[:,[1,2]]
-	c = c[~c['Character'].str.contains('On|screen|Grey|text|NPC')]
+	c = c[~c['Character'].str.contains('On|screen|Grey|text|NPC|Guard')]
 
 	data = c.to_numpy()
 	return data
@@ -62,15 +62,22 @@ def count_context(df, index):
 		for j in ran:
 			col = int(np.where(index == cha[j])[0])
 			context_adj[row, col] += 1
-		context_adj[row, row] -= 1
-	context_adj /= len(cha_i)
+		context_adj[row, row] = 0
 	return context_adj
 
 def make_graph(df):
 	index = df['C'].value_counts().index.to_numpy()
+	# print(df[df['C'] == 'Soldier'])
 	call_adj = count_call(df, index)
 	context_adj = count_context(df, index)
-	# print(call_adj + context_adj)
+	# print(index, len(index), "\n\n***\n")
+	print("call\n",call_adj, "\n\n***\n")
+	print("context\n", context_adj)
+	# np.savetxt("context.txt", np.int64(context_adj))
+	"""
+	node2vec 보기
+	방향성, weight
+	"""
 
 def main():
 	df = cleaning()

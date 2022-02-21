@@ -3251,8 +3251,8 @@ Rude: ..................,Rude,..................,1
 Barret: I don't like it. How'd they find out where we were?,Barret,I don't like it. How'd they find out where we were?,11
 "Tifa: Hey, something seems wrong, Like they knew we were coming.",Tifa,"Hey, something seems wrong, Like they knew we were coming.",10
 Aeris: ...How could they know we were coming here.,Aeris,...How could they know we were coming here.,8
-"Red XIII(before ""In the Land of the Study of Planet Life""): Interesting... They were definitely waiting for us.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,Interesting... They were definitely waiting for us.,7
-"Red XIII(after ""In the Land of the Study of Planet Life""): Hey, Cloud. How did the Turks know to wait and ambush us here?",RedXIIIafterIntheLandoftheStudyofPlanetLife,"Hey, Cloud. How did the Turks know to wait and ambush us here?",13
+"Red XIII(before ""In the Land of the Study of Planet Life""): Interesting... They were definitely waiting for us.",RedXIII,Interesting... They were definitely waiting for us.,7
+"Red XIII(after ""In the Land of the Study of Planet Life""): Hey, Cloud. How did the Turks know to wait and ambush us here?",RedXIII,"Hey, Cloud. How did the Turks know to wait and ambush us here?",13
 Cait Sith: How'd they know that we were here?,CaitSith,How'd they know that we were here?,7
 Yuffie: I don't like this! It's like the whole world knows where we're going.,Yuffie,I don't like this! It's like the whole world knows where we're going.,13
 Vincent: How did they know that we were here...,Vincent,How did they know that we were here...,8
@@ -3261,8 +3261,8 @@ Vincent: How did they know that we were here...,Vincent,How did they know that w
 "Barret: A spy, maybe? No, no way.",Barret,"A spy, maybe? No, no way.",6
 Tifa: A spy!?...No way.,Tifa,A spy!?...No way.,3
 Aeris: That there's a Shinra spy...,Aeris,That there's a Shinra spy...,5
-"Red XIII(before ""In the Land of the Study of Planet Life""): ......someone's been informing them.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,......someone's been informing them.,4
-"Red XIII(after ""In the Land of the Study of Planet Life""): ...You think someone told the Shinra about us?",RedXIIIafterIntheLandoftheStudyofPlanetLife,...You think someone told the Shinra about us?,8
+"Red XIII(before ""In the Land of the Study of Planet Life""): ......someone's been informing them.",RedXIII,......someone's been informing them.,4
+"Red XIII(after ""In the Land of the Study of Planet Life""): ...You think someone told the Shinra about us?",RedXIII,...You think someone told the Shinra about us?,8
 Yuffie: Maybe it's someone in this group?,Yuffie,Maybe it's someone in this group?,6
 "Cait Sith: You don't think there's a spy, do you Cloud? I hate this. Now everyone's gonna blame me because I'm new.",CaitSith,"You don't think there's a spy, do you Cloud? I hate this. Now everyone's gonna blame me because I'm new.",20
 Vincent: Means there's a Shinra spy...?,Vincent,Means there's a Shinra spy...?,5
@@ -4754,8 +4754,8 @@ Choco Billy: Ride this one?,Choco Billy,Ride this one?,3
 Barret: Wassup with that broad?,Barret,Wassup with that broad?,4
 Aeris: Who is that girl...?,Aeris,Who is that girl...?,4
 "Tifa: Cloud, do you know her?",Tifa,"Cloud, do you know her?",5
-"Red XIII(before ""In the Land of the Study of Planet Life""): ...You don't see ones like that everyday...",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,...You don't see ones like that everyday...,7
-"Red XIII(after ""In the Land of the Study of Planet Life""): Who is that girl? She's still a child.",RedXIIIafterIntheLandoftheStudyofPlanetLife,Who is that girl? She's still a child.,8
+"Red XIII(before ""In the Land of the Study of Planet Life""): ...You don't see ones like that everyday...",RedXIII,...You don't see ones like that everyday...,7
+"Red XIII(after ""In the Land of the Study of Planet Life""): Who is that girl? She's still a child.",RedXIII,Who is that girl? She's still a child.,8
 Cait Sith: Who do you think it is? I didn't recognize the face.,CaitSith,Who do you think it is? I didn't recognize the face.,11
 Vincent: She has a mysterious weapon... I've seen her somewhere before...,Vincent,She has a mysterious weapon... I've seen her somewhere before...,10
 Cid: Who is that kid!,Cid,Who is that kid!,4
@@ -4797,7 +4797,7 @@ Yuffie: I'm Yuffie! Good to meetcha!,Yuffie,I'm Yuffie! Good to meetcha!,5
 Tifa: She's gone... What is it with her?,Tifa,She's gone... What is it with her?,7
 Tifa: Hey! My money!,Tifa,Hey! My money!,3
 "Red XIII(before ""In the Land of the Study of Planet Life""): ...... There's some money missing.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,...... There's some money missing.,5
-"Red XIII(after ""In the Land of the Study of Planet Life""): Hey! My emergency money!",RedXIIIafterIntheLandoftheStudyofPlanetLife,Hey! My emergency money!,4
+"Red XIII(after ""In the Land of the Study of Planet Life""): Hey! My emergency money!",RedXIII,Hey! My emergency money!,4
 "Cait Sith: Gil, gil, gil, where's my gil!?",CaitSith,"Gil, gil, gil, where's my gil!?",6
 Vincent: ...... Difficult to understand her motivation.,Vincent,...... Difficult to understand her motivation.,6
 Vincent: Hmm? ......pretty fast.,Vincent,Hmm? ......pretty fast.,3
@@ -4807,7 +4807,7 @@ Barret: Shit!! Gimme back my money!!,Barret,Shit!! Gimme back my money!!,5
 Aeris: Geez!! You shouldn't do this!!,Aeris,Geez!! You shouldn't do this!!,5
 Tifa: Wait a second! Where's my money!?,Tifa,Wait a second! Where's my money!?,6
 "Red XIII(before ""In the Land of the Study of Planet Life""): Greed... A perfect example of human nature.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,Greed... A perfect example of human nature.,7
-"Red XIII(after ""In the Land of the Study of Planet Life""): Give...give back what is rightfully mine!",RedXIIIafterIntheLandoftheStudyofPlanetLife,Give...give back what is rightfully mine!,6
+"Red XIII(after ""In the Land of the Study of Planet Life""): Give...give back what is rightfully mine!",RedXIII,Give...give back what is rightfully mine!,6
 "Cait Sith: Hey, you can't--! My gil, give it back--!",CaitSith,"Hey, you can't--! My gil, give it back--!",8
 Vincent: The Gil doesn't seem to be her real objective...,Vincent,The Gil doesn't seem to be her real objective...,9
 "Cid: Steal MY money, will ya? You got a lot of #&^%$ nerve!! Just remember who you're dealin' with, punk!!",Cid,"Steal MY money, will ya? You got a lot of #&^%$ nerve!! Just remember who you're dealin' with, punk!!",19
@@ -4833,8 +4833,8 @@ Cid: What is it?,Cid,What is it?,3
 "Barret: Ey, let's get some rest.",Barret,"Ey, let's get some rest.",5
 Aeris: Let's rest. Okay?,Aeris,Let's rest. Okay?,3
 "Tifa: Say, let's take a rest. Okay?",Tifa,"Say, let's take a rest. Okay?",6
-"Red XIII(before ""In the Land of the Study of Planet Life""): We should get some rest while we can.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,We should get some rest while we can.,8
-"Red XIII(after ""In the Land of the Study of Planet Life""): Let's take a rest when we can afford to.",RedXIIIafterIntheLandoftheStudyofPlanetLife,Let's take a rest when we can afford to.,9
+"Red XIII(before ""In the Land of the Study of Planet Life""): We should get some rest while we can.",RedXIII,We should get some rest while we can.,8
+"Red XIII(after ""In the Land of the Study of Planet Life""): Let's take a rest when we can afford to.",RedXIII,Let's take a rest when we can afford to.,9
 "Yuffie: Come on... break time, break time!",Yuffie,"Come on... break time, break time!",6
 "Cait Sith: Now, shall we get some rest?",CaitSith,"Now, shall we get some rest?",6
 Vincent: It's probably best to get some rest now.,Vincent,It's probably best to get some rest now.,8
@@ -4848,8 +4848,8 @@ NPC: Hello. I'm sorry but we're not selling anything now. We're using everything
 Barret: Shinra? The hell those jackasses doing here?,Barret,Shinra? The hell those jackasses doing here?,7
 "Aeris: What do you mean, ""a battlefield""?",Aeris,"What do you mean, ""a battlefield""?",6
 Tifa: You mean Shinra?,Tifa,You mean Shinra?,3
-"Red XIII(before ""In the Land of the Study of Planet Life""): The Shinra......",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,The Shinra......,2
-"Red XIII(after ""In the Land of the Study of Planet Life""): Shinra again.",RedXIIIafterIntheLandoftheStudyofPlanetLife,Shinra again.,2
+"Red XIII(before ""In the Land of the Study of Planet Life""): The Shinra......",RedXIII,The Shinra......,2
+"Red XIII(after ""In the Land of the Study of Planet Life""): Shinra again.",RedXIII,Shinra again.,2
 Yuffie: The Shinra? Here too?,Yuffie,The Shinra? Here too?,4
 Cait Sith: ......,CaitSith,......,1
 Vincent: What do you mean by that?,Vincent,What do you mean by that?,6
@@ -4879,8 +4879,8 @@ Tifa: That's the reactor and the condor.,Tifa,That's the reactor and the condor.
 "Barret: Damn, that's one big bird! But why are they trying to get rid of it with weapons?",Barret,"Damn, that's one big bird! But why are they trying to get rid of it with weapons?",17
 Aeris: Why?,Aeris,Why?,1
 Tifa: What's so wrong with having a condor on top of the reactor?,Tifa,What's so wrong with having a condor on top of the reactor?,12
-"Red XIII(before ""In the Land of the Study of Planet Life""): It's not very logical.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,It's not very logical.,4
-"Red XIII(after ""In the Land of the Study of Planet Life""): The logic eludes me.",RedXIIIafterIntheLandoftheStudyofPlanetLife,The logic eludes me.,4
+"Red XIII(before ""In the Land of the Study of Planet Life""): It's not very logical.",RedXIII,It's not very logical.,4
+"Red XIII(after ""In the Land of the Study of Planet Life""): The logic eludes me.",RedXIII,The logic eludes me.,4
 Yuffie: I'm certain there must be state-of-the-art materia inside the reactor. Am I right?,Yuffie,I'm certain there must be state-of-the-art materia inside the reactor. Am I right?,13
 Cait Sith: Huh?......,CaitSith,Huh?......,1
 Vincent: ......That's too much.,Vincent,......That's too much.,3
@@ -4890,8 +4890,8 @@ Cloud: New lives......,Cloud,New lives......,2
 Barret: I'll do it! I'll protect them from Shinra!,Barret,I'll do it! I'll protect them from Shinra!,8
 "Aeris: We must protect the condor eggs, right?",Aeris,"We must protect the condor eggs, right?",7
 Tifa: Condors' eggs. A real work of nature. We've got to protect the life of the planet.,Tifa,Condors' eggs. A real work of nature. We've got to protect the life of the planet.,16
-"Red XIII(before ""In the Land of the Study of Planet Life""): So, to protect the eggs, are you gonna protect the reactor?......",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,"So, to protect the eggs, are you gonna protect the reactor?......",11
-"Red XIII(after ""In the Land of the Study of Planet Life""): We're going to protect the reactor in order to save the eggs.",RedXIIIafterIntheLandoftheStudyofPlanetLife,We're going to protect the reactor in order to save the eggs.,12
+"Red XIII(before ""In the Land of the Study of Planet Life""): So, to protect the eggs, are you gonna protect the reactor?......",RedXIII,"So, to protect the eggs, are you gonna protect the reactor?......",11
+"Red XIII(after ""In the Land of the Study of Planet Life""): We're going to protect the reactor in order to save the eggs.",RedXIII,We're going to protect the reactor in order to save the eggs.,12
 "Yuffie: Special materia, huh? Well, well, things are getting interesting.",Yuffie,"Special materia, huh? Well, well, things are getting interesting.",9
 Cait Sith: I'm gonna leave it up to you all.,CaitSith,I'm gonna leave it up to you all.,8
 Vincent: ......and come out in one piece?,Vincent,......and come out in one piece?,6
@@ -4901,8 +4901,8 @@ Cloud: ......,Cloud,......,1
 Barret: What's there to think about? We gotta do it!,Barret,What's there to think about? We gotta do it!,9
 "Aeris: Cloud, why are you still worrying about it?",Aeris,"Cloud, why are you still worrying about it?",8
 Tifa: Cloud......,Tifa,Cloud......,1
-"Red XIII(before ""In the Land of the Study of Planet Life""): You decide what we're going to do.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,You decide what we're going to do.,7
-"Red XIII(after ""In the Land of the Study of Planet Life""): What are we going to do?",RedXIIIafterIntheLandoftheStudyofPlanetLife,What are we going to do?,6
+"Red XIII(before ""In the Land of the Study of Planet Life""): You decide what we're going to do.",RedXIIIb,You decide what we're going to do.,7
+"Red XIII(after ""In the Land of the Study of Planet Life""): What are we going to do?",RedXIII,What are we going to do?,6
 "Yuffie: If things go right, we might even be able to pray to that special materia.",Yuffie,"If things go right, we might even be able to pray to that special materia.",15
 Cait Sith: I'll leave it up to you so please do as you see fit.,CaitSith,I'll leave it up to you so please do as you see fit.,13
 Vincent: It's difficult to get back what you've lost......,Vincent,It's difficult to get back what you've lost......,8
@@ -4911,8 +4911,8 @@ Cloud: ......,Cloud,......,1
 Barret: Hey! We'll come to the rescue.,Barret,Hey! We'll come to the rescue.,6
 "Aeris: Yes, yes. Let's do our best.",Aeris,"Yes, yes. Let's do our best.",6
 "Tifa: Cloud, thanks.",Tifa,"Cloud, thanks.",2
-"Red XIII(before ""In the Land of the Study of Planet Life""): I got it. Let me lend a hand, too.",RedXIIIbeforeIntheLandoftheStudyofPlanetLife,"I got it. Let me lend a hand, too.",9
-"Red XIII(after ""In the Land of the Study of Planet Life""): Got it. I'm gonna lend a hand, too.",RedXIIIafterIntheLandoftheStudyofPlanetLife,"Got it. I'm gonna lend a hand, too.",8
+"Red XIII(before ""In the Land of the Study of Planet Life""): I got it. Let me lend a hand, too.",RedXIII,"I got it. Let me lend a hand, too.",9
+"Red XIII(after ""In the Land of the Study of Planet Life""): Got it. I'm gonna lend a hand, too.",RedXIII,"Got it. I'm gonna lend a hand, too.",8
 "Yuffie: Okay, it's settled. We're gonna get the materia, right?",Yuffie,"Okay, it's settled. We're gonna get the materia, right?",9
 "Cait Sith: Well then, let's do our best.",CaitSith,"Well then, let's do our best.",6
 Vincent: That's the right decision.,Vincent,That's the right decision.,4
