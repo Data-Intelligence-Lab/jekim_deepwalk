@@ -65,14 +65,31 @@ def count_context(df, index):
 		context_adj[row, row] = 0
 	return context_adj
 
+def make_adjlist(context_adj):
+	threshold = np.median(context_adj[np.nonzero(context_adj)]) # nonzero median value = threshold
+	adjmat = np.where(context_adj < threshold, 0, 1)
+
+	# np.savetxt("adjmat.txt", adjmat, fmt='%d')
+	# with open("list.adjlist",'w') as f:
+	for i in range(0, 2):
+			a = np.array(np.nonzero(adjmat[i])).tolist()
+			print(a)
+			
+			# f.write(str(i) + " ")
+			# f.write(" ".join(a))
+			# f.write("\n")
+
+
+
+
 def make_graph(df):
 	index = df['C'].value_counts().index.to_numpy()
-	# print(df[df['C'] == 'Soldier'])
 	call_adj = count_call(df, index)
 	context_adj = count_context(df, index)
+	make_adjlist(context_adj)
 	# print(index, len(index), "\n\n***\n")
-	print("call\n",call_adj, "\n\n***\n")
-	print("context\n", context_adj)
+	# print("call\n",call_adj, "\n\n***\n")
+	# print("context\n", context_adj)
 	# np.savetxt("context.txt", np.int64(context_adj))
 	"""
 	node2vec 보기
