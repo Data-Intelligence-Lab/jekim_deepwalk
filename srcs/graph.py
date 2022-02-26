@@ -44,6 +44,8 @@ def count_call(df, index):
 			row = int(np.where(index == df.loc[i, 'C'])[0]) # who
 			col = int(np.where(index == mention)[0]) # mentioned
 			call_adj[row, col] += 1
+	for j in range(0, len(index)):
+		call_adj[j, j] = 0
 	return call_adj
 
 def count_context(df, index):
@@ -68,29 +70,38 @@ def count_context(df, index):
 def make_adjlist(context_adj):
 	threshold = np.median(context_adj[np.nonzero(context_adj)]) # nonzero median value = threshold
 	adjmat = np.where(context_adj < threshold, 0, 1)
-
 	# np.savetxt("adjmat.txt", adjmat, fmt='%d')
-	# with open("list.adjlist",'w') as f:
-	for i in range(0, 2):
-			a = np.array(np.nonzero(adjmat[i])).tolist()
-			print(a)
-			
-			# f.write(str(i) + " ")
-			# f.write(" ".join(a))
-			# f.write("\n")
+	with open("../graphs/undir_list.adjlist",'w') as f:
+		for i in range(0, len(adjmat)):
+			a = np.array(np.nonzero(adjmat[i])).flatten().tolist()
+			s = " ".join(str(e) for e in a)
+			f.write(str(i) + " " + s)
+			f.write("\n")
 
-
-
+def make_directed(call_adj, flag):
+	threshold = np.median(call_adj[np.nonzero(call_adj)])
+	if flag == 1:
+		""" 1. directed, unweighted,
+			threshold applied = nonzero median """
+		dir_adjmat = np.where(call_adj < threshold, 0, 1)
+	elif flag == 2:
+		""" 2. directed, unweighted,
+			no threshold """		
+		dir_adjmat = np.where(call_adj > 0, 1, 0)
+	elif flag == 3:
+		""" 3. directed, weighted """	
+		dir_adjmat = call_adj
+	s = "../graphs/dir_mat" + str(flag) + ".adjmat"
+	np.savetxt(s, dir_adjmat, fmt='%d')
 
 def make_graph(df):
 	index = df['C'].value_counts().index.to_numpy()
+	np.savetxt("../graphs/index", index, fmt='%s')
 	call_adj = count_call(df, index)
 	context_adj = count_context(df, index)
 	make_adjlist(context_adj)
-	# print(index, len(index), "\n\n***\n")
-	# print("call\n",call_adj, "\n\n***\n")
-	# print("context\n", context_adj)
-	# np.savetxt("context.txt", np.int64(context_adj))
+	make_directed(call_adj, flag=1)
+
 	"""
 	node2vec 보기
 	방향성, weight
