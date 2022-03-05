@@ -13,7 +13,8 @@ def get_data():
 	Skipgram format -> node and dimension in first line are removed
 	latent representation values are standardized
 	"""
-	filename = "../karate1.embeddings"
+
+	filename = "../embeddings/undir.embeddings"
 	df = pd.read_csv(filename, sep=' ', header=None)
 	node = df.iloc[:,0].to_numpy()
 	dim = df.iloc[:,1:] # pandas dataframe
@@ -25,11 +26,12 @@ def do_pca(std_dim):
 	PCA by sklearn
 	n_components = 3 : accumulated variance ratio is 0.9845891301350316
 	"""
+
 	pca = PCA(n_components=3)
 	p_comp = pca.fit_transform(std_dim)
 
-	# print(pca.explained_variance_ratio_)
-	# print(sum(pca.explained_variance_ratio_))
+	print(pca.explained_variance_ratio_)
+	print(sum(pca.explained_variance_ratio_))
 
 	return p_comp
 
@@ -87,10 +89,10 @@ def do_kmeans(dim):
 def main():
 	node, dim = get_data()
 	dim = do_pca(dim)
-	result = do_kmeans(dim)
+	# result = do_kmeans(dim)
 
-	# print_pca_graph(dim)
-	print_kmeans_graph(result)
+	print_pca_graph(dim)
+	# print_kmeans_graph(result)
 
 if __name__ == "__main__":
 	main()
