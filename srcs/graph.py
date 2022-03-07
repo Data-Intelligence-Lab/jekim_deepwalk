@@ -26,6 +26,7 @@ def cleaning():
 	for i in index:
 		df = df.drop(df[df['C'] == i].index)
 	df.reset_index(drop=True, inplace=True)
+
 	return df
 
 def is_mentioned(index, str):
@@ -69,14 +70,18 @@ def count_context(df, index):
 
 def make_adjlist(context_adj):
 	threshold = np.median(context_adj[np.nonzero(context_adj)]) # nonzero median value = threshold
+	# mean = np.mean(context_adj[np.nonzero(context_adj)])
+	# print(threshold, mean)
+	# np.savetxt("nonzero_call.txt", context_adj[np.nonzero(context_adj)], fmt='%d')
 	adjmat = np.where(context_adj < threshold, 0, 1)
-	# np.savetxt("adjmat.txt", adjmat, fmt='%d')
-	with open("../graphs/undir_list.adjlist",'w') as f:
-		for i in range(0, len(adjmat)):
-			a = np.array(np.nonzero(adjmat[i])).flatten().tolist()
-			s = " ".join(str(e) for e in a)
-			f.write(str(i) + " " + s)
-			f.write("\n")
+	# print(len(adjmat[np.nonzero(adjmat)]), len(context_adj[np.nonzero(context_adj)]))
+	# # np.savetxt("adjmat.txt", adjmat, fmt='%d')
+	# with open("../graphs/undir_list.adjlist",'w') as f:
+	# 	for i in range(0, len(adjmat)):
+	# 		a = np.array(np.nonzero(adjmat[i])).flatten().tolist()
+	# 		s = " ".join(str(e) for e in a)
+	# 		f.write(str(i) + " " + s)
+	# 		f.write("\n")
 
 def make_directed(call_adj, flag):
 	threshold = np.median(call_adj[np.nonzero(call_adj)])
@@ -92,20 +97,22 @@ def make_directed(call_adj, flag):
 		""" 3. directed, weighted """	
 		dir_adjmat = call_adj
 	s = "../graphs/dir_mat" + str(flag) + ".adjmat"
-	np.savetxt(s, dir_adjmat, fmt='%d')
+	# np.savetxt(s, dir_adjmat, fmt='%d')
+	with open("../graphs/dir_list.adjlist",'w') as f:
+		for i in range(0, len(dir_adjmat)):
+			a = np.array(np.nonzero(dir_adjmat[i])).flatten().tolist()
+			s = " ".join(str(e) for e in a)
+			f.write(str(i) + " " + s)
+			f.write("\n")
 
 def make_graph(df):
 	index = df['C'].value_counts().index.to_numpy()
-	np.savetxt("../graphs/index", index, fmt='%s')
+	# np.savetxt("../graphs/index", index, fmt='%s')
 	call_adj = count_call(df, index)
 	context_adj = count_context(df, index)
 	make_adjlist(context_adj)
-	make_directed(call_adj, flag=1)
-
-	"""
-	node2vec 보기
-	방향성, weight
-	"""
+	# make_directed(call_adj, flag=1) # use flag=1
+	print("finished")
 
 def main():
 	df = cleaning()

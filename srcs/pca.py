@@ -46,7 +46,9 @@ def print_pca_graph(data):
 	ax.set_ylabel("2nd principal component")
 	ax.set_zlabel("3rd principal component")
 
-	plt.show()
+	# plt.show()
+	plt.savefig('1.png')
+
 
 def set_color(label):
 	if label == 0:
