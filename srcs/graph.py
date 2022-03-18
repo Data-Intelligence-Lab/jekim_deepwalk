@@ -117,7 +117,14 @@ def make_weighted(context_adj, call_adj):
 			w = dir_adjmat[i, j] + dir_adjmat[j, i]
 			adjmat[i, j] += w
 			adjmat[j, i] += w
-	print(adjmat)
+
+	with open("../graphs/weighted_edgelist.file", 'w') as f:
+		for i in range(0, len(adjmat)):
+			a = np.array(np.nonzero(adjmat[i])).flatten()
+			# print(type(a), len(a), a)
+			for j in a[a>i]:
+				s = str(i) + " " + str(j) + " " + str(adjmat[i, j]) + "\n"
+				f.write(s)
 	# np.savetxt("adjmat", adjmat, fmt='%f')
 
 
