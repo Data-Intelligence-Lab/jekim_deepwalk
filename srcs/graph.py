@@ -105,12 +105,30 @@ def make_directed(call_adj, flag):
 			f.write(str(i) + " " + s)
 			f.write("\n")
 
+def make_weighted(context_adj, call_adj):
+	cont_ths = np.median(context_adj[np.nonzero(context_adj)])
+	call_ths = np.median(call_adj[np.nonzero(call_adj)])
+
+	adjmat = np.where(context_adj <= cont_ths, 0, 1.0)
+	dir_adjmat = np.where(call_adj <= call_ths, 0, 0.5)
+
+	for i in range(0, len(dir_adjmat)):
+		for j in range(i + 1, len(dir_adjmat)):
+			w = dir_adjmat[i, j] + dir_adjmat[j, i]
+			adjmat[i, j] += w
+			adjmat[j, i] += w
+	print(adjmat)
+	# np.savetxt("adjmat", adjmat, fmt='%f')
+
+
 def make_graph(df):
 	index = df['C'].value_counts().index.to_numpy()
 	# np.savetxt("../graphs/index", index, fmt='%s')
 	call_adj = count_call(df, index)
 	context_adj = count_context(df, index)
-	make_adjlist(context_adj)
+	make_weighted(context_adj, call_adj)
+
+	# make_adjlist(context_adj)
 	# make_directed(call_adj, flag=1) # use flag=1
 	print("finished")
 
